@@ -1,0 +1,73 @@
+
+.main-font {
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.second-font {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.third-font {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.forth-font {
+    font-family: "Mooli", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.generator {
+    height: 100vh;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+}
+
+.container::after {
+    content: ' ';
+    border: #09c 2px solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px #09c inset;
+    animation: flash 2s infinite alternate;
+}
+
+@keyframes flash {
+    0%{box-shadow: 0 0 0px #09c inset;}
+    12.5%{box-shadow: 0 0 5px #09c inset;}
+    25%{box-shadow: 0 0 10px #09c inset;}
+    37.5%{box-shadow: 0 0 15px #09c inset;}
+    50%{box-shadow: 0 0 20px #09c inset;}
+    62.5%{box-shadow: 0 0 25px #09c inset;}
+    75%{box-shadow: 0 0 30px #09c inset;}
+    87.5%{box-shadow: 0 0 35px #09c inset;}
+    100%{box-shadow: 0 0 40px #09c inset;}
+}
+
+.generator .container button{
+    transition: all 0.4s;
+}
+
+.generator .container button:hover{
+    background-color: rgba(108, 117, 125) !important;  
+    color: rgb(33, 37, 41) !important; 
+}
+
+.generator .container .Quote p {
+    text-shadow: 0 0 20px rgb(255, 193, 7);
+    line-height: 30pt;
+}
